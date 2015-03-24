@@ -71,7 +71,8 @@ describe('ui.grid.saveState uiGridSaveStateService', function () {
         saveVisible: true,
         saveSort: true,
         saveFilter: true,
-        saveSelection: true
+        saveSelection: true,
+        savePinned: true
       });
     });
 
@@ -85,7 +86,8 @@ describe('ui.grid.saveState uiGridSaveStateService', function () {
         saveVisible: false,
         saveSort: false,
         saveFilter: false,
-        saveSelection: false
+        saveSelection: false,
+        savePinned: false
       };
       uiGridSaveStateService.defaultGridOptions(options);
       expect( options ).toEqual({
@@ -96,7 +98,8 @@ describe('ui.grid.saveState uiGridSaveStateService', function () {
         saveVisible: false,
         saveSort: false,
         saveFilter: false,
-        saveSelection: false
+        saveSelection: false,
+        savePinned: false
       });
     });    
   });
