@@ -117,13 +117,13 @@ describe('ui.grid.edit GridCellDirective', function () {
       expect(element.html()).toBe(displayHtml);
     });
 
-    it('should stop when grid scrolls', function () {
+    /*it('should stop when grid scrolls', function () {
       //stop edit
       scope.grid.api.core.raise.scrollEvent();
       scope.$digest();
       //back to beginning
       expect(element.html()).toBe(displayHtml);
-    });
+    });*/
 
     it('should fire public event', inject(function ($timeout) {
 

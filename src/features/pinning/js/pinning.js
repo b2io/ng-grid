@@ -225,7 +225,6 @@
         }
         else {
           col.renderContainer = container;
-          col.width = col.drawnWidth;
           if (container === uiGridPinningConstants.container.LEFT) {
             grid.createLeftContainer();
           }

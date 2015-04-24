@@ -605,7 +605,7 @@
               if ( $scope.grid.api.cellNav ){
                 $scope.grid.api.cellNav.scrollToIfNecessary( $scope.row, $scope.col );
               }
-              
+
               cellModel = $parse($scope.row.getQualifiedColField($scope.col));
               //get original value from the cell
               origCellValue = cellModel($scope);
@@ -660,11 +660,11 @@
 
               //stop editing when grid is scrolled
               var deregOnGridScroll = $scope.col.grid.api.core.on.scrollEvent($scope, function () {
-                endEdit(true);
+                /*endEdit(true);
                 $scope.grid.api.edit.raise.afterCellEdit($scope.row.entity, $scope.col.colDef, cellModel($scope), origCellValue);
                 deregOnGridScroll();
                 deregOnEndCellEdit();
-                deregOnCancelCellEdit();
+                deregOnCancelCellEdit();*/
               });
 
               //end editing
