@@ -259,6 +259,8 @@
           if (evt.keyCode === uiGridConstants.keymap.LEFT ||
             (evt.keyCode === uiGridConstants.keymap.TAB && evt.shiftKey) ||
 
+            evt.keyCode === uiGridConstants.keymap.SHIFT ||
+
             evt.keyCode === uiGridConstants.keymap.RIGHT ||
             evt.keyCode === uiGridConstants.keymap.TAB ||
 
